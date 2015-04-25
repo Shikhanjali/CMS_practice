@@ -1,0 +1,16 @@
+<table class="table table-bordered">
+		<tr>
+			<th>Names</th>
+			<th>Amount</th>
+			<th>Date</th>
+			<th>Credit card</th>
+		</tr>
+	{{#each donations}}
+		<tr>
+			<td>{{name}}</td>
+			<td>${{amount}}</td>
+			<td>{{year}}</td>
+			<td>***-{{creditCardNum}}</td>
+		</tr>
+	{{/each}}
+</table>
